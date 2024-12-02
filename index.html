@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- First Page -->
+    <div class="container">
+        <h1>Click the button below:</h1>
+        <button id="clickButton">Click Here</button>
+    </div>
+
+    <!-- Second Page -->
+    <div id="apologyPage" class="hidden">
+        <div class="photos">
+            <div>
+                
+                <img src="images/photo2.jpeg" alt="Photo 2">
+                <img src="images/photo5.jpeg" alt="Photo 5">
+                <img src="images/photo6.jpeg" alt="Photo 6">
+            </div>
+
+            <div>
+                <img src="images/photo1.jpeg" alt="Photo 1">
+                <img src="images/photo4.jpeg" alt="Photo 4">
+            </div>
+
+            <div>
+                <p class="text">Sorry Cutuuu Babyyy</p>
+                <img src="images/whitetulips.webp">
+                <p class="text">I love you a lot</p>
+            </div>
+
+            <div>
+                <img src="images/photo8.jpeg" alt="Photo 8">
+                <img src="images/photo10.jpeg" alt="Photo 10">
+            </div>
+
+            <div>
+                <img src="images/photo7.jpeg" alt="Photo 7">
+                <img src="images/photo11.jpeg" alt="Photo 11">
+                <img src="images/photo9.jpeg" alt="Photo 9">
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle button click
+        document.getElementById('clickButton').addEventListener('click', function () {
+            document.querySelector('.container').style.display = 'none';
+            document.getElementById('apologyPage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
